@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'SEVEN BIT',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'SEVEN BIT'),
@@ -34,9 +34,11 @@ class _MyHomePageState extends State<MyHomePage> {
     return Container(
       child: SafeArea(
         child: Scaffold(
+          backgroundColor: Colors.indigo[800],
           appBar: AppBar(
-              title: Text(widget.title),),
+              title: Text(widget.title,style: TextStyle(color: Colors.grey[50]),),),
           body: SingleChildScrollView(
+
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
