@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'first_List.dart';
 import 'time_slot.dart';
+import 'cash_slot.dart';
 
 void main() {
   runApp(MyApp());
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   first_List(context),
                   time_slot(),
+                  cash_slot(),
                 ],
             ),
           ),
