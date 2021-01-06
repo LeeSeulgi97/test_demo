@@ -16,14 +16,18 @@ Widget time_slot(){
           children: <Widget>[
             Container(
               margin: const EdgeInsets.only(top:3,left: 5,right: 5,bottom: 5),
-              child: Row(children: <Widget>[
-                Container(
-                  margin: const EdgeInsets.only(right: 13),
-                  child: Icon(Icons.access_alarm,color: Colors.white,size: 22),
-                ),
-                Text('마감시간',style: TextStyle(color: Colors.white,fontSize: 10))
-              ],
-              ),
+              child: Stack(
+                  children: <Widget>[
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Icon(Icons.access_alarm,color: Colors.white,size: 22),
+                    ),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Text('마감시간',style: TextStyle(color: Colors.white,fontSize: 10)),
+                    )
+                  ],
+                )
             ),
             Text("00:00:00",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
           ],
@@ -42,12 +46,15 @@ Widget time_slot(){
           children: <Widget>[
             Container(
               margin: const EdgeInsets.only(top:3,left: 5,right: 5,bottom: 5),
-              child: Row(children: <Widget>[
-                Container(
-                  margin: const EdgeInsets.only(right: 13),
+              child: Stack(children: <Widget>[
+                Align(
+                  alignment: Alignment.centerLeft,
                   child: Icon(Icons.access_alarm,color: Colors.white,size: 22),
                 ),
-                Text('현재시간',style: TextStyle(color: Colors.white,fontSize: 10))
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: Text('현재시간',style: TextStyle(color: Colors.white,fontSize: 10))
+                )
               ],
               ),
             ),
@@ -68,12 +75,15 @@ Widget time_slot(){
           children: <Widget>[
             Container(
               margin: const EdgeInsets.only(top:3,left: 5,right: 5,bottom: 5),
-              child: Row(children: <Widget>[
-                Container(
-                  margin: const EdgeInsets.only(right: 13),
+              child: Stack(children: <Widget>[
+                Align(
+                  alignment: Alignment.centerLeft,
                   child: Icon(Icons.access_alarm,color: Colors.white,size: 22),
                 ),
-                Text('남은시간',style: TextStyle(color: Colors.white,fontSize: 10))
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: Text('남은시간',style: TextStyle(color: Colors.white,fontSize: 10))
+                )
               ],
               ),
             ),
