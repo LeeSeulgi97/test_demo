@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   first_List(context),
                   time_slot(),
-                  cash_slot(),
+                  cash_slot(context),
                 ],
             ),
           ),

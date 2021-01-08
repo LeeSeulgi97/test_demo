@@ -9,6 +9,7 @@ Widget first_List(context){
         height: 30,
          margin: const EdgeInsets.only(top: 7, left: 10, right: 10),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
            Container(
               width: 95,height: MediaQuery.of(context).size.height,
@@ -33,6 +34,7 @@ Widget first_List(context){
           height: 30,
           margin: const EdgeInsets.only(top: 3, left: 10, right: 10),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
                 width: 95,height: MediaQuery.of(context).size.height,
@@ -60,6 +62,7 @@ Widget first_List(context){
           height: 30,
           margin: const EdgeInsets.only(left: 10,right: 10),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
                 width: 95,height: MediaQuery.of(context).size.height,
@@ -88,6 +91,7 @@ Widget first_List(context){
           height: 30,
           margin: const EdgeInsets.only(left: 10,right: 10),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
                 width: 95,height: MediaQuery.of(context).size.height,
@@ -115,6 +119,7 @@ Widget first_List(context){
           height: 30,
           margin: const EdgeInsets.only(left: 10,right: 10),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
                 width: 95,height: MediaQuery.of(context).size.height,
@@ -142,6 +147,7 @@ Widget first_List(context){
           height: 30,
           margin: const EdgeInsets.only(left: 10,right: 10),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
                 width: 95,height: MediaQuery.of(context).size.height,
