@@ -13,7 +13,7 @@ Widget cash_slot(context){
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container( width: 100,height: MediaQuery.of(context).size.height,
-              child: Text('누적금액', textAlign: TextAlign.center,style: TextStyle(color: Colors.indigo[300])),alignment: Alignment(0.0, 0.0),
+              child: Text('누적금액', textAlign: TextAlign.center,style: TextStyle(color: Colors.white)),alignment: Alignment(0.0, 0.0),
               decoration: BoxDecoration(border: Border.all(color: Colors.black)),),
             Container(width: 200,height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(border: Border.all(color: Colors.black)),
@@ -38,7 +38,7 @@ Widget cash_slot(context){
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container( width: 100,height: MediaQuery.of(context).size.height,
-              child: Text('보유금액', textAlign: TextAlign.center,style: TextStyle(color: Colors.indigo[300])),alignment: Alignment(0.0, 0.0),
+              child: Text('보유금액', textAlign: TextAlign.center,style: TextStyle(color: Colors.white)),alignment: Alignment(0.0, 0.0),
               decoration: BoxDecoration(border: Border.all(color: Colors.black)),),
             Container( width: 200,height: MediaQuery.of(context).size.height,
               child: Text('0.00', textAlign: TextAlign.center,style: TextStyle(color: Colors.indigo[300])),alignment: Alignment(0.0, 0.0),
@@ -52,7 +52,7 @@ Widget cash_slot(context){
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container( width: 100,height: MediaQuery.of(context).size.height,
-              child: Text('거래금액', textAlign: TextAlign.center,style: TextStyle(color: Colors.indigo[300])),alignment: Alignment(0.0, 0.0),
+              child: Text('거래금액', textAlign: TextAlign.center,style: TextStyle(color: Colors.white)),alignment: Alignment(0.0, 0.0),
               decoration: BoxDecoration(border: Border.all(color: Colors.black)),),
             Container(
               width: 200,height: MediaQuery.of(context).size.height,

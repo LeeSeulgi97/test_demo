@@ -4,6 +4,9 @@ import 'first_List.dart';
 import 'time_slot.dart';
 import 'cash_slot.dart';
 import 'button_slot.dart';
+import 'list_button.dart';
+import 'second_List.dart';
+import 'third_List.dart';
 
 void main() {
   runApp(MyApp());
@@ -46,6 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   time_slot(),
                   cash_slot(context),
                   button_slot(context),
+                  list_button(),
+                  second_List(context),
+                  third_List(context)
                 ],
             ),
           ),
