@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 Widget lottery_slot(){
+
+  final input_controller = TextEditingController();
+  // String num0,num1,num2,num3,num4,num5,num6,num7,num8,num9;
+  int input_num;
+
   return Container(
     height: 65,
     margin: const EdgeInsets.only(top: 7,left: 10,right: 10),
@@ -17,6 +23,8 @@ Widget lottery_slot(){
                   color: Colors.indigo[900],
                   child: Text('0',textAlign: TextAlign.center,style: TextStyle(color: Colors.blue[500])),
                   onPressed: (){
+                    input_num = 0;
+                    input_controller.text = input_num as String;
                   },
                 ),
                 width: 31,
@@ -131,10 +139,14 @@ Widget lottery_slot(){
             children:<Widget>[
               Container(
                 child: TextField(
+                  controller: input_controller,
+                  keyboardType: TextInputType.number,
+                  inputFormatters: [WhitelistingTextInputFormatter(RegExp('[0-9]')),],
                   style: TextStyle(fontSize: 13,color: Colors.white),
                   decoration: InputDecoration(hintText: 'number', counterText: ''), // counterText로 밑에 제한글시수를 안보이게 할수있다.
                   textAlign: TextAlign.center,
                   maxLength: 2,
+                  // onChanged: (){},
                 ),
                 width: 150,
               ),
