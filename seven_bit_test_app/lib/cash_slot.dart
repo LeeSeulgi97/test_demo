@@ -21,12 +21,30 @@ Widget cash_slot(context){
                 icon: Icon(Icons.arrow_drop_down, size: 35),
                 color: Colors.indigo[800],
                 itemBuilder: (BuildContext bc){
-                  return items.map((cash) => PopupMenuItem(child: Text(cash, style: TextStyle(color: Colors.indigo[300]),),value: cash)).toList();
+                  return items.map((cash) =>
+                      PopupMenuItem(
+                          child:Container(
+                            child: Row(
+                              children: <Widget>[
+                                Container( width: 100,
+                                  child: Text(cash, textAlign: TextAlign.center,style: TextStyle(color: Colors.indigo[300])),alignment: Alignment(0.0, 0.0),
+                                  ),
+                                Container(
+                                  width: 80,
+                                  child: Icon(Icons.attach_money, color: Colors.indigo[300],),alignment: Alignment.topRight,
+                                ),
+                                Container(
+                                  width: 50,
+                                  child: Text('0.00',style: TextStyle(color: Colors.indigo[300]),),
+                                ),
+                              ],
+                            ),
+                            decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.black))),
+                          )
+//                          Text(cash, style: TextStyle(color: Colors.indigo[300]),),value: cash
+                      )).toList();
                 },
-                onSelected: (value){
-                  context.setState((){
-                    selectedItem = value;
-                  });},
+                offset: Offset(0,0),
               ),),
           ],
         ),
