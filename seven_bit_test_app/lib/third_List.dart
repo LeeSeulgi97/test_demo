@@ -6,23 +6,22 @@ Widget third_List(context){
       Container(
         height: 30,
         margin: const EdgeInsets.only(top: 10, left: 10, right: 10),
-        color: Colors.indigo[900],
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
               width: 85,height: MediaQuery.of(context).size.height,
               child: Text('종목명', textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 10)),alignment: Alignment(0.0, 0.0),
-              decoration: BoxDecoration(border: Border.all(color: Colors.black)),),
+              decoration: BoxDecoration(border: Border.all(color: Colors.black),color: Colors.indigo[900],),),
             Container(width: 85, height: MediaQuery.of(context).size.height,
               child:  Text('계약시간', textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 10)),alignment: Alignment(0.0, 0.0),
-              decoration: BoxDecoration(border: Border(top: BorderSide(color: Colors.black), bottom: BorderSide(color: Colors.black))),),
+              decoration: BoxDecoration(border: Border(top: BorderSide(color: Colors.black), bottom: BorderSide(color: Colors.black)),color: Colors.indigo[900],),),
             Container(width: 85, height: MediaQuery.of(context).size.height,
               child: Text('금액', textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 10)),alignment: Alignment(0.0, 0.0),
-              decoration: BoxDecoration(border: Border.all(color: Colors.black)),),
+              decoration: BoxDecoration(border: Border.all(color: Colors.black),color: Colors.indigo[900],),),
             Container(width: 85, height: MediaQuery.of(context).size.height,
               child: Text('ODD & EVEN', textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 10)),alignment: Alignment(0.0, 0.0),
-              decoration: BoxDecoration(border: Border(top: BorderSide(color: Colors.black), bottom: BorderSide(color: Colors.black),right: BorderSide(color: Colors.black))),),
+              decoration: BoxDecoration(border: Border(top: BorderSide(color: Colors.black), bottom: BorderSide(color: Colors.black),right: BorderSide(color: Colors.black)),color: Colors.indigo[900],),),
           ],
         ),
       ),

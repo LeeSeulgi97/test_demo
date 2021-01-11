@@ -16,6 +16,7 @@ Widget lottery_slot(){
         Container(
           margin: const EdgeInsets.only(top: 2,left: 1,right: 1),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               Container(
                 margin: const EdgeInsets.only(right: 3),
